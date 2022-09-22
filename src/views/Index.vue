@@ -7,14 +7,16 @@
             <div class="lists">
                 <template v-for="(item, index) in listNFTData" :key="index">
                     <div class="items">
-                        <div class="top">
-                            <div class="empty"></div>
-                            <div class="name">{{ item.name }}</div>
-                        </div>
-                        <div class="list">
-                            <label v-for="(desc, descIndex) in item.desc" :key="descIndex">
-                                {{ desc }}
-                            </label>
+                        <div class="items_content">
+                            <div class="top">
+                                <div class="empty"></div>
+                                <div class="name">{{ item.name }}</div>
+                            </div>
+                            <div class="list">
+                                <label v-for="(desc, descIndex) in item.desc" :key="descIndex">
+                                    {{ desc }}
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </template>

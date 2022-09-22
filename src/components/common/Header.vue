@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, inject, onBeforeUnmount } from 'vue'
+import { ref } from 'vue'
 
 const socialListData = ref([
     {
