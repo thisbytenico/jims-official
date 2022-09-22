@@ -273,8 +273,7 @@ button:focus {
     }
     .layout_footer {
         position: relative;
-        opacity: 1!important;
-        visibility: visible!important;
+        display: block!important;
         background-color: var(--primary-color);
         width: 100%;
         .footer { 
