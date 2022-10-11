@@ -210,12 +210,13 @@ button:focus {
                 left: 100px;
 
                 .button {
-                    width: 240px;
+                    // width: 240px;
+                    padding: 0 30px;
                     height: 66px;
                     background: #241E17;
                     border: 2px solid;
                     border-radius: 6px;
-                    font-size: 36px;
+                    font-size: 26px;
                     font-family: HYQiHei;
                     font-weight: normal;
                     color: #D4AA72;
@@ -326,8 +327,15 @@ button:focus {
     }
 }
 
-
+@media screen and (max-width: 1600px) {
+    ._layout .layout_view .page_index .nft_button {
+        bottom:240px;
+    }
+}
 @media screen and (max-width: 768px) {
+    ._layout .layout_view .page_index .nft_button .button{
+        font-size: 14px;
+    }
     ._layout .layout_view .page_index {
 
         .WTBG,
