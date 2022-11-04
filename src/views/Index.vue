@@ -38,7 +38,6 @@ const setHtmlFS = () => {
     let min_value = 60
     if (isTool) {
         min_value = 50
-        // console.log('win_w', win_w)
         if (win_w < 768) {
             font_size_value = win_w / 7.5
         } else {
@@ -53,19 +52,19 @@ function detailInfo(index, descIndex) {
     let posIndex = -1
     console.log('index === 0)', index === 0)
     if (index === 0) {
-        if (descIndex) posIndex = [0, 2, 4, 3, 1][descIndex]
+        if (descIndex !== undefined) posIndex = [0, 2, 4, 3, 1][descIndex]
         router.push('/JimRogersInfo?index=' + posIndex)
     } else if (index === 1) {
-        if (descIndex) posIndex = [2, 3, 4, 5, 7][descIndex]
+        if (descIndex !== undefined) posIndex = [2, 1, 4, 5, 7][descIndex]
         router.push('/PeggyParker?index=' + posIndex)
     } else if (index === 2) {
-        if (descIndex) posIndex = [3, 2, 6, 4, 7][descIndex] - 1
+        if (descIndex !== undefined) posIndex = [2, 1, 5, 3, 6][descIndex]
         router.push('/HappyAndBee?index=' + posIndex)
     } else if (index === 3) {
-        if (descIndex) posIndex = [1, 0, 3, 2, 4][descIndex]
+        if (descIndex !== undefined) posIndex = [1, 0, 3, 2, 4][descIndex]
         router.push('/Foundation?index=' + posIndex)
     } else {
-        if (descIndex) posIndex = [0, 1, 2, 3, 4][descIndex]
+        if (descIndex !== undefined) posIndex = [0, 1, 2, 3, 4][descIndex]
         router.push('/PhilanthropyandInvestment?index=' + posIndex)
     }
 }

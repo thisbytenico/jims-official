@@ -13,9 +13,10 @@
 import './index.scss'
 export default {
     mounted() {
-        setTimeout(() => {
-            document.documentElement.scrollTo({ top: document.querySelectorAll('.HappyAndBee img')[this.$route.query.index].offsetTop, behavior: 'smooth' })
-        }, 1000)
+        if (this.$route.query.index != -1)
+            setTimeout(() => {
+                document.documentElement.scrollTo({ top: document.querySelectorAll('.HappyAndBee img')[this.$route.query.index].offsetTop, behavior: 'smooth' })
+            }, 1000)
     },
     methods: {
         vedioOne() {
