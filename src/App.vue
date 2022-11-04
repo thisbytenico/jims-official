@@ -1,5 +1,5 @@
 <template>
-    <div class="_layout">
+    <div class="_layout" :style="{ height: $route.path == '/' ? 0 : 'auto' }">
         <section class="layout_header">
             <common-header></common-header>
         </section>

@@ -10,6 +10,8 @@
     --common-border: #2a2f36;
     --common-placeholder: #b4b4b4;
     --primary-color: #9E855D;
+    // overflow: auto;
+    // height: 100vh;
 }
 
 * {
@@ -96,7 +98,7 @@ button:focus {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 0;
+    // height: 0;
     min-height: 100vh;
     background-image: url('../../../public/images/BG.png');
     background-size: cover;
@@ -281,6 +283,7 @@ button:focus {
                                     font-weight: normal;
                                     color: #808080;
                                     line-height: 22px;
+                                    cursor: pointer;
                                 }
                             }
 

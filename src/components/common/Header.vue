@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <div class="header_container">
-            <div class="logo">
+            <div class="logo" @click="$router.push('/')">
                 <img src="/images/logo@2x.png" alt="" srcset="" />
                 <label>罗杰斯基金会</label>
             </div>
