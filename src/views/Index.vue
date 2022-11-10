@@ -1,7 +1,7 @@
 <template>
   <div class="page_index">
     <div class="nft_button">
-      <div class="button">罗杰斯基金会年度盛典即将启幕 …… 欢迎详询</div>
+      <div class="button">罗杰斯基金会3周年私享晚宴即将启幕</div>
     </div>
     <div class="footer_items">
       <div class="lists">
@@ -27,8 +27,16 @@
       </div>
     </div>
     <img class="WTBG"
+         v-if="isDay"
+         src="../../public/images/WTBGDAY.png" />
+    <img class="WTBG"
+         v-else
          src="../../public/images/WTBG.png" />
     <img class="human"
+         v-if="isDay"
+         src="../../public/images/humanday.png" />
+    <img class="human"
+         v-else
          src="../../public/images/human.png" />
   </div>
 </template>
@@ -70,7 +78,7 @@ function detailInfo (index, descIndex) {
     if (descIndex !== undefined) posIndex = [1, 0, 3, 2, 4][descIndex]
     router.push('/Foundation?index=' + posIndex)
   } else {
-    if (descIndex !== undefined) posIndex = [0, 1, 2, 3, 4][descIndex]
+    if (descIndex !== undefined) posIndex = [1, 0, 2, 3, 4][descIndex]
     router.push('/PhilanthropyandInvestment?index=' + posIndex)
   }
 }
@@ -82,7 +90,13 @@ function detailInfo (index, descIndex) {
 //   false
 // );
 // setHtmlFS()
-
+const props = defineProps({
+  isDay: {
+    default: true,
+    type: Boolean
+  }
+})
+const isDay = ref(props.isDay)
 const listNFTData = ref([
   {
     name: '吉姆·罗杰斯',
@@ -98,11 +112,11 @@ const listNFTData = ref([
   },
   {
     name: '罗杰斯基金会',
-    desc: ['罗杰斯基金会介绍', '罗杰斯基金会章程', '罗杰斯思想研究中心', '罗杰斯基金会年度盛典', '罗杰斯基金会合作伙伴']
+    desc: ['罗杰斯基金会介绍', '罗杰斯家族办公室', '罗杰斯思想研究中心', '罗杰斯数字投资银行', '罗杰斯传记院线电影']
   },
   {
     name: '公益与投资',
-    desc: ['吉姆•罗杰斯留守儿童之家', '全球孩子命运共同体', '全球科技成果产业转化中心', '环球旅行•多国家组合式移居', '罗杰斯云上书院 & 罗杰斯数字博物馆']
+    desc: ['全球孩子命运共同体', '吉姆•罗杰斯留守儿童之家', '全球科技成果产业转化中心', '玩赚地球•多国家组合式移居', '罗杰斯云上书院 & 罗杰斯数字博物馆']
   }
 ])
 </script>

@@ -92,6 +92,49 @@ button:focus {
     outline: 0;
     border: 0;
 }
+div.day_layout{
+    background-image: url('../../../public/images/BGDAY.png');
+    .layout_view .page_index {
+        .human{
+            width: 140px;
+            top: 92px;
+            right: 168px;
+        }
+        .nft_button .button{
+            background: #FFFFFF;
+            border: 1px solid;
+            border-radius: 6px;
+            font-size: 26px;
+            font-family: HYQiHei;
+            font-weight: normal;
+            color: #BD956B;
+        }
+        .footer_items .lists .items{
+            // border: 1px solid;
+            // border-radius: 22px 22px 0px 0px;
+            background: linear-gradient(0deg, #FEFEFD, #BD956B);
+            .items_content{
+                background: #FFFFFF;
+                border: 1px solid;
+                border-radius: 22px 22px 0px 0px;   
+                border: 1px solid;
+                border-color: #BD956B;
+
+                .top .name{
+                    border-color: rgba(#BC9D6A,0.2);
+                    color: #BD956B;
+                    &::after{
+                        background: #BC9469;
+                    }
+                }
+                .list label{
+                    color:#333;
+                }
+            }
+        }
+    }
+   
+}
 
 ._layout {
     width: 100%;
@@ -115,7 +158,8 @@ button:focus {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        position: absolute;
+        z-index: 10;
         .header {
             padding: 0 100px;
             width: 100%;
@@ -195,13 +239,13 @@ button:focus {
                 width: 310px;
                 position: absolute;
                 right: 85px;
-                top: 0;
+                top: 78px;
             }
 
             .human {
                 width: 230px;
                 position: absolute;
-                top: 92px;
+                top: 172px;
                 right: 126px;
             }
 
@@ -336,8 +380,29 @@ button:focus {
     }
 }
 @media screen and (max-width: 768px) {
-    ._layout .layout_view .page_index .nft_button .button{
-        font-size: 14px;
+    body {
+        div._layout {
+            .layout_header{
+                position: relative;
+            }
+            .layout_view .page_index .human {
+                top: 102px;
+                right: 50%;
+            }
+            .layout_view .page_index .nft_button .button{
+            }
+        }
+        div.day_layout {
+            .layout_view .page_index .human {
+                top: 4px;
+                right: 48%;
+            }
+        }
+     
+    }
+    div._layout .layout_view .page_index .nft_button .button{
+        font-size: 16px;
+        padding: 0 20px;
     }
     ._layout .layout_view .page_index {
 
@@ -418,6 +483,8 @@ button:focus {
             align-items: center;
             justify-content: center;
             padding: 530px 0 40px;
+            width: 90%;
+            margin: 0 auto;
         }
 
         .footer_items {
