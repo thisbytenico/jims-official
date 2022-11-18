@@ -21,5 +21,5 @@ import CommonFooter from '@/components/common/Footer.vue'
 
 const curHours = new Date().getHours();
 
-const isDay = ref(curHours < 19 && curHours > 7)
+const isDay = ref(curHours < 19 && curHours > 7) && true
 </script>

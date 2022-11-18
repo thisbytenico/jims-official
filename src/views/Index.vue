@@ -1,7 +1,7 @@
 <template>
   <div class="page_index">
     <div class="nft_button">
-      <div class="button">罗杰斯基金会3周年私享晚宴即将启幕</div>
+      <div class="button">罗杰斯基金会3周年私享晚宴即将启幕......</div>
     </div>
     <div class="footer_items">
       <div class="lists">

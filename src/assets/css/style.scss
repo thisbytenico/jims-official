@@ -97,7 +97,7 @@ div.day_layout{
     .layout_view .page_index {
         .human{
             width: 140px;
-            top: 92px;
+            top:14px;
             right: 168px;
         }
         .nft_button .button{
@@ -221,7 +221,7 @@ div.day_layout{
         display: flex;
         align-items: center;
         justify-content: center;
-
+        margin-top: 80px;
         .page_index {
             width: 100%;
             position: relative;
@@ -239,14 +239,14 @@ div.day_layout{
                 width: 310px;
                 position: absolute;
                 right: 85px;
-                top: 78px;
+                top: 0;
             }
 
             .human {
-                width: 230px;
+                width: 140px;
                 position: absolute;
-                top: 172px;
-                right: 126px;
+                top: 14px;
+                right: 168px;
             }
 
             .nft_button {
@@ -386,8 +386,8 @@ div.day_layout{
                 position: relative;
             }
             .layout_view .page_index .human {
-                top: 102px;
-                right: 50%;
+                top: 4px;
+                right: 48%;
             }
             .layout_view .page_index .nft_button .button{
             }
@@ -399,6 +399,9 @@ div.day_layout{
             }
         }
      
+    }
+    ._layout .layout_view{
+        margin-top: -2px;
     }
     div._layout .layout_view .page_index .nft_button .button{
         font-size: 16px;
@@ -417,9 +420,9 @@ div.day_layout{
             top: 0;
         }
 
-        .human {
-            width: 220px;
-        }
+        // .human {
+        //     width: 220px;
+        // }
     }
 
     ._layout {
